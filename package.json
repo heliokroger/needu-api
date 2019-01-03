@@ -1,0 +1,32 @@
+{
+  "name": "needu-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist && babel ./ --out-dir dist/ --ignore ./node_modules",
+    "start": "nodemon --exec babel-node index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "array-sort": "^1.0.0",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "cloudinary": "^1.13.2",
+    "cors": "^2.8.5",
+    "elasticsearch": "^15.2.0",
+    "express": "^4.16.4",
+    "fast-sort": "^1.5.4",
+    "mongoose": "^5.4.1",
+    "password-hash-and-salt": "^0.1.4",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "rimraf": "^2.6.2"
+  }
+}
